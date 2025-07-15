@@ -1,4 +1,7 @@
 import { defineConfig } from "@trigger.dev/sdk/v3";
+//! add env reading so project id can be read
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 export default defineConfig({
   project: process.env.TRIGGER_PROJECT_ID!,
